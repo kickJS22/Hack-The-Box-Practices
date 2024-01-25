@@ -1,0 +1,4 @@
+commands:
+	ping + ipaddres -> it sends an ICMP echo message to see if the pc is online
+	nmap + ipaddres -> helps to scan ports in the machine, with the argument -sV we can see wich services correspond to those ports
+	telent + ipaddres -> connects to the victim's machine through telnet

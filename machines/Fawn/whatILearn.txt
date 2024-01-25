@@ -1,0 +1,6 @@
+commands:
+	ftp + ipaddress -> To connect to a machine through ftp
+
+Theory:
+	FTP (File Transfer Protocol), to exchange files from a server to the client, using the ftp protocol we can see all the files on the FTP server because isn't encrypted, there is 
+	another protocol called SFTP wich encrypts that exchange, or SSH that also encrypt the data.
