@@ -1,0 +1,17 @@
+Theory:
+	SMB(Server Message Block): is one of the varipus communication protocols that provides access to files, printers, and serial ports within a network, the open port reserved is the 445, ussually encountered in Windows machines.
+	A SMB-enabled storaged on the network is called a share and can bbe accessed by any client that has the proper credentials, need an user/password authentication. Some mistakes are accidentially allow logins without credentials
+	or using either guest accounts or anonymous log-ons, for do so we have to select wich share we want to access and try to put default credentials or even no credentials at all, this ussually works for the customs shares.
+	Inside de smb client, we can use normal unix commands.
+
+Commands:
+	smbclient + ipddress -> To connect to an smb client
+	
+	smbclient -L + ipaddress ->	it lists all the shares on the smbclient, we ussually have the ADMIN$ (For administrative shares), C$ (Administrative share for the C: disk volume),
+					PC$ (Inter-process communications share) and a custom share.
+	
+	smbclient \\\\ipaddress\\sharegroup -> 	This allow us to try to login to a sharegropu like ADMIN$, a custom share, etc.
+
+	get + filename ->	To download a file from a server, ftp or smbd
+
+	cat + filename ->	To see a file content 
